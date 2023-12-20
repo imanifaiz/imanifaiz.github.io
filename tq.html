@@ -21,38 +21,6 @@
           gtag('config', 'G-7WDCFYJYQS');
         </script>
 
-        <!-- Event snippet for purchase conversion page -->
-        <script>
-          gtag('event', 'conversion', {
-              'send_to': 'AW-10991426310/ISAYCKru0f8YEIa2j_ko',
-              'value': 100.0,
-              'currency': 'MYR',
-              'transaction_id': '12'
-          });
- gtag('event', 'conversion', {
-              'send_to': 'AW-10991426310/ISAYCKru0f8YEIa2j_ko',
-              'value': 100.0,
-              'currency': 'MYR',
-              'transaction_id': '12',
-              'ecommerce': {
-                  'purchase': {
-                      'value': 100.0,
-                      'currency': 'MYR',
-                      'transaction_id': '12'
-                  }
-             }
-          });
-        </script>
-
-        
-        <!-- Google Tag Manager
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NNM4974X');</script>
-         End Google Tag Manager -->
-
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
         <!--<link rel="stylesheet" href="css/icon-font.css">-->
@@ -64,118 +32,15 @@
     </head>
 
     <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNM4974X"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-
         <script>
-            <!-- sample code to trigger "add_to_cart" event -->
-
-            dataLayer.push({
-                event: "add_to_cart",
-                ecommerce: {
-                    add_to_cart: {
-                        transaction_id: "T_12345_1",
-                        value: 25.42,
-                        tax: 4.90,
-                        shipping: 5.99,
-                        currency: "USD",
-                        coupon: "SUMMER_SALE",
-                    },
-                    items: [{
-                        item_id:"SKU_12345",
-                        item_name: "Stan and Friends Tee",
-                        affiliation: "Google Merchandise Store",
-                        coupon: "SUMMER_FUN",
-                        discount: 2.22,
-                        index: 0,
-                        item_brand: "Google",
-                        item_category: "Apparel",
-                        item_category2: "Adult",
-                        item_category3: "Shirts",
-                        item_category4: "Crew",
-                        item_category5: "Short sleeve",
-                        item_list_id: "related_products",
-                        item_list_name: "Related Products",
-                        item_variant: "green",
-                        location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-                        price: 9.99,
-                        quantity: 1
-                    }]
-                }
-            });
-            
-            
-            <!-- sample code to trigger "init_checkout" event -->
-            
-            dataLayer.push({
-                event: 'init_checkout',
-                ecommerce: {
-                    init_checkout: {
-                        transaction_id: "T_12345_1",
-                        value: 25.42,
-                        tax: 4.90,
-                        shipping: 5.99,
-                        currency: "USD",
-                        coupon: "SUMMER_SALE",
-                    },
-                    items: [{
-                        item_id:"SKU_12345",
-                        item_name: "Stan and Friends Tee",
-                        affiliation: "Google Merchandise Store",
-                        coupon: "SUMMER_FUN",
-                        discount: 2.22,
-                        index: 0,
-                        item_brand: "Google",
-                        item_category: "Apparel",
-                        item_category2: "Adult",
-                        item_category3: "Shirts",
-                        item_category4: "Crew",
-                        item_category5: "Short sleeve",
-                        item_list_id: "related_products",
-                        item_list_name: "Related Products",
-                        item_variant: "green",
-                        location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-                        price: 9.99,
-                        quantity: 1
-                    }]
-                }
-            });
-
-            <!-- sample code to trigger "purchase" event -->
-            dataLayer.push({
-                event: 'purchase',
-                ecommerce: {
-                    purchase: {
-                        transaction_id: "T_12345_1",
-                        value: 25.42,
-                        tax: 4.90,
-                        shipping: 5.99,
-                        currency: "USD",
-                        coupon: "SUMMER_SALE",
-                    },
-                    items: [{
-                        item_id:"SKU_12345",
-                        item_name: "Stan and Friends Tee",
-                        affiliation: "Google Merchandise Store",
-                        coupon: "SUMMER_FUN",
-                        discount: 2.22,
-                        index: 0,
-                        item_brand: "Google",
-                        item_category: "Apparel",
-                        item_category2: "Adult",
-                        item_category3: "Shirts",
-                        item_category4: "Crew",
-                        item_category5: "Short sleeve",
-                        item_list_id: "related_products",
-                        item_list_name: "Related Products",
-                        item_variant: "green",
-                        location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-                        price: 9.99,
-                        quantity: 1
-                    }]
-                }
+            gtag('event', 'purchase', {
+                'send_to': 'AW-10991426310/ISAYCKru0f8YEIa2j_ko',
+                'transaction_id': '123DD',
+                'value': 100,
+                'currency': 'MYR',
+                'discount': 0,
+                'new_customer': {}, // only if succesful donation count < 1
+                'items': []
             });
         </script>
         
